@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Gothic&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+}
+
+.main-login{
+    width: 100vw;
+    height: 100vh;
+    background-color: #B1CDB2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.left-image{
+    margin: 10px;
+}
+
+.left-image img{
+    padding: 10px;
+    width: 35vw;
+    border-radius: 20px;
+    
+}
+
+.left-login{
+    width: 50vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.right-login h1 {
+    color: #263D27;
+    opacity: 85%;
+    font-size: 20px;
+}
+
+.right-login{
+    width: 50vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-login{
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    flex-direction: column;
+    padding: 35px 35px;
+    background: #94E998;
+    border-radius: 20px;
+}
+
+.textfield{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    margin: 10px 0;
+}
+
+.textfield > input{
+    width: 100%;
+    border: none;
+    border-radius: 10px;
+    padding: 15px;
+    background: #263D27;
+}
+
+.textfield label{
+    color: #fff;
+    font-family: "League Gothic";
+    font-size: 20px;
+}
+
+.textfield textarea{
+    width: 100%;
+    border: none;
+    border-radius: 10px;
+    padding: 15px;
+    background: #263D27;
+}
+
+.textfield >input::placeholder{
+    color: #fff;
+}
+
+.btn-login{
+    width: 100%;
+    padding: 16px 0;
+    margin: 25px;
+    border: none;
+    border-radius: 8px;
+    text-transform: uppercase;
+    font-weight: 800;
+    letter-spacing: 3px;
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 950px){
+    .card-login{
+        width: 85%;
+
+    }
+}
+
+@media only screen and(max-width: 600px) {
+    .main-login{
+        flex-direction: column;
+    }
+    .left-login{
+        width: 100%;
+        height: auto;
+    }
+    .right-login{
+        width: 100%;
+        height: auto;
+    }
+    .left-image{
+        width: 50vw;
+    }
+}

@@ -1,0 +1,629 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Gothic&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Franklin Gothic Medium';
+}
+
+body {
+    overflow-x: hidden;
+}
+
+header{
+    background-color: #F2F7F1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem 6rem;
+}
+
+.nav-bar img{
+    width: 100px;
+    height: 100px;
+}
+
+.floresta{
+    display: flex;
+    align-items: center;
+}
+
+.floresta h1{
+    color: #388E3C;
+    font-size: 60px;
+}
+
+.floresta a{
+    text-decoration: none;
+}
+
+.nav-bar .logo-floresta button{
+    width: 50px;
+    height: 50px;
+    border: none;
+    font-size: 20px;
+    background-color: transparent;
+    
+}
+
+.nav-bar .login-button button{
+    margin: 5px;
+    height: 50px;
+    border: none;
+    font-size: 20px;
+    background-color: transparent;
+    align-items:center;
+}
+
+.login-button button{
+    border: none;
+    background-color: transparent;
+    padding: 10px 15px;
+}
+
+.login-button button a{
+    border: none;
+    color: rgb(242, 240, 240);
+    text-decoration: none;
+    font-size: 25px;
+    color: #388E3C;
+    display: flex;
+}
+
+.slider{
+    margin: 0 auto;
+    width: 800px;
+    height: 400px;
+    overflow: hidden;
+}
+
+section.slider{
+    margin: 0 auto;
+    width: 100%;
+    height: auto;
+    padding: 0 !important;
+    overflow: hidden;
+}
+
+.slider-content{
+    width: 400%;
+    height: auto;
+    display: flex;
+}
+
+.slider-content input{
+    display: none;
+}
+
+.nav-manual label{
+    display: none;
+}
+
+/*LEGENDA DAS IMAGENS DO CARROSEL*/
+.slider-content .legenda{
+    position: absolute;
+    bottom: 35px;
+    left: 15px;
+    color: #000000; 
+    padding: 10px; 
+    border-radius: 15px 0px 0px 0px; 
+    font-size: 16px;
+    padding: 20px;
+    font-size: 30px;
+}
+
+.slider-content .legenda2{
+    position: absolute;
+    bottom: 35px;
+    left: 15px;
+    color: #000000; 
+    padding: 10px; 
+    border-radius: 15px 0px 0px 0px; 
+    font-size: 16px;
+    padding: 20px;
+    font-size: 30px;
+}
+
+.slider-content .legenda a{
+    text-decoration: none;
+    color: #0B540E;
+    -webkit-text-stroke-width: 0.5px; /* largura da borda */
+    -webkit-text-stroke-color: #ffffff; /* cor da borda */
+    font-size: 57px;
+}
+
+.legenda2 a{
+    text-decoration: none;
+    color: #1bb220;
+    -webkit-text-stroke-width: 0.5px; /* largura da borda */
+    -webkit-text-stroke-color: #ffffff; /* cor da borda */
+    font-size: 57px;
+}
+
+/*fim das legendas*/
+
+.slide-box{
+    width: 25%;
+    height: auto;
+    position: relative;
+    text-align: center;
+    transition: 1s;
+}
+
+.slide-box img{
+   width: 110%; 
+   height: 409px;
+}
+
+.nav-manual, .nav-auto{
+    position: absolute;
+    width: 100%;
+    margin-top: 28%;
+    display: flex;
+    justify-content: center;
+    margin: 5px;
+}
+
+.nav-manual .manual-btn, .nav-auto div{
+    border: 1px solid #0B540E;
+    padding: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.nav-manual .manual-btn:not(:last-child), .nav-auto div:not(:last-child){
+    margin-right: 10px;
+}
+
+.nav-manual .manual-btn:hover{
+    background-color: #388E3C;
+}
+
+#radio1:checked ~ .nav-auto .auto-btn1, 
+#radio2:checked ~ .nav-auto .auto-btn2{
+    background-color: #388E3C;
+}
+
+#radio1:checked ~ .primeiro{
+    margin-left: 0%;
+}
+
+#radio2:checked ~ .primeiro{
+    margin-left: -25%;
+}
+/*fim do carrosel*/
+main {
+    background-color: #89CA8C;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.container {
+    display: flex;
+    flex-direction: row-reverse; /* Inverte a ordem dos elementos na linha */
+    justify-content: center; /* Centraliza os elementos horizontalmente */
+    align-items: center; /* Centraliza os elementos verticalmente */
+}
+
+iframe {
+    width: 650px;
+    height: 300px;
+    border-radius: 20px;
+    margin: 20px;
+    padding: 10px;
+    border: rgb(242, 242, 21)  solid 4px;
+}
+
+.container h1 {
+    font-size: 35px;
+    color: #F2F7F1;
+    margin: 10px;
+    padding: 10px;
+    text-align: center; /* Centraliza o texto horizontalmente */
+}
+
+h2{
+    color: #ffffff;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    text-align: center;
+    margin: 0 auto;
+    font-size: 46px;
+}
+
+
+.container2 img{
+    width: 150px;
+    height: 130px;
+}
+
+hr{
+    border: #7F5539 solid 2px;
+}
+
+
+.container2, p{
+    color: #fff;
+    padding: 10px;
+    font-size: 25px;
+}
+
+.container2{
+    display: flex;
+    padding: 10px;
+    align-items: center;
+    justify-content: center;
+}
+
+.container-projetos h2{
+    font-size: 50px;
+}
+
+.container-projetos p{
+    margin: 10px;
+}
+
+.brasileirao{
+    color: #fff;
+    padding: 10px;
+    margin: 10px;
+}
+
+.brasileirao h1{
+    padding: 10px;
+    font-size: 40px;
+    color: #388E3C;
+    -webkit-text-stroke-width: 0.5px; /* largura da borda */
+    -webkit-text-stroke-color: #ffffff;
+}
+
+.brasileirao img{
+    border-radius: 40px;
+    height: 550px;
+    width: 960px;
+    display: block;
+    margin: 0 auto;
+}
+
+.brasileirao p {
+    text-align:justify;
+    font-size: 27px;
+    margin: 30px;
+    padding: 15px;
+}
+
+.reflorestamento h1{
+    color: #fff;
+    margin: 10px;
+    padding: 10px;
+    font-size: 50px;
+}
+
+.reflorestamento img{
+    border-radius: 40px;
+    height: 550px;
+    width: 960px;
+    display: block;
+    margin: 0 auto;
+}
+
+.reflorestamento p{
+    text-align:justify;
+    font-size: 27px;
+    margin: 30px;
+    padding: 15px;
+}
+
+main #txtdepoimento{
+    margin: 35px;
+    font-size: 30px;
+}
+
+.p1 img{
+    width: 200px;
+    height: 250px;
+    float: left;
+    padding: -10px;
+    margin: 15px;
+    border-radius: 10px;
+}
+
+.p1 h2{
+    color: #388E3C;
+    font-size: 50px;
+}
+
+.p2 img{
+    width: 200px;
+    height: 250px;
+    float: left;
+    padding: -10px;
+    margin: 15px;
+    border-radius: 10px;
+}
+
+.p2 h2{
+    color: #388E3C;
+    font-size: 50px;
+}
+
+.p2{
+    clear: both;
+}
+
+.p3 img{
+    width: 200px;
+    height: 250px;
+    float: left;
+    padding: -10px;
+    margin: 15px;
+    border-radius: 10px;
+}
+
+.p3 h2{
+    color: #388E3C;
+    font-size: 50px;
+}
+
+.p3{
+    clear: both;
+}
+
+.p4 img{
+    width: 200px;
+    height: 250px;
+    float: left;
+    padding: -10px;
+    margin: 15px;
+    border-radius: 10px;
+}
+
+.p4 h2{
+    color: #388E3C;
+    font-size: 50px;
+}
+
+.p4{
+    clear: both;
+}
+
+.p5 img{
+    width: 200px;
+    height: 250px;
+    float: left;
+    padding: -10px;
+    margin: 15px;
+    border-radius: 10px;
+}
+
+.p5 h2{
+    color: #388E3C;
+    font-size: 50px;
+}
+
+.p5{
+    clear: both;
+}
+
+footer{
+    display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0;
+  width: 100%;
+  background-color: #7F5539;
+}
+
+.footercontainer{
+    width: 100%;
+  padding: 70px 10px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footercontainer img{
+    width: 200px;
+    height: 200px;
+    display: flex;
+}
+
+.footercontainer h2{
+    font-size: 30px;
+    display: flex;
+}
+
+.footer-copy{
+    display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.footer-copy ul{
+    display: flex;
+  justify-content: center;
+  padding: 30px;
+  flex-wrap: wrap;
+}
+
+.footer-copy ul li{
+    display: flex;
+  align-items: center;
+  justify-content: center;
+  list-style-type: none;
+  margin: 10px;
+}
+
+.footer-copy ul li a{
+    color: white;
+  text-decoration: none;
+  font-size: 1.3em;
+}
+
+.footer-copy ul li a:hover{
+    border-bottom: 2px solid #1bb220;
+}
+
+@media only screen and (max-width: 768px) {
+    header {
+        padding: 1rem; /* Reduzir o padding */
+    }
+
+    .nav-bar img {
+        width: 80px; /* Reduzir o tamanho do logo */
+        height: 80px;
+    }
+
+    .floresta h1 {
+        font-size: 40px; /* Reduzir o tamanho da fonte do título */
+    }
+
+    /* Adicionar mais estilos conforme necessário para telas menores */
+}
+
+/* Estilos para telas menores que 576px */
+@media only screen and (max-width: 576px) {
+
+    body {
+        overflow-x: hidden;
+    }
+    .container {
+        flex-direction: column; /* Alterar a direção do container para empilhado verticalmente */
+        align-items: center; /* Centralizar os elementos verticalmente */
+    }
+
+    iframe {
+        width: 100%; /* O vídeo ocupará toda a largura disponível */
+    }
+
+    .container h1 {
+        font-size: 30px; /* Reduzir o tamanho da fonte do título */
+    }
+
+    h2 {
+        font-size: 36px; /* Reduzir o tamanho da fonte dos subtítulos */
+    }
+
+    /* Adicionar mais estilos conforme necessário para telas menores */
+}
+
+@media screen and (max-width: 768px) {
+    body {
+        overflow-x: hidden;
+    }
+
+    header {
+        padding: 1rem;
+    }
+
+    .nav-bar img {
+        width: 80px;
+        height: 80px;
+    }
+
+    .floresta h1 {
+        font-size: 40px;
+    }
+
+    .slider {
+        width: 100%;
+        height: auto;
+    }
+
+    .slider-content {
+        width: 100%;
+    }
+
+    .slide-box img {
+        width: 100%;
+        height: auto;
+    }
+
+    .container {
+        flex-direction: column;
+    }
+
+    iframe {
+        width: 100%;
+    }
+
+    .container h1 {
+        font-size: 28px;
+    }
+
+    h2 {
+        font-size: 32px;
+    }
+
+    .container2 img {
+        width: 100px;
+        height: 90px;
+    }
+
+    .container2, p {
+        font-size: 18px;
+    }
+
+    .container-projetos h2 {
+        font-size: 36px;
+    }
+
+    .container-projetos p {
+        font-size: 20px;
+    }
+
+    .brasileirao img,
+    .reflorestamento img {
+        height: auto;
+        width: 100%;
+        border-radius: 20px;
+    }
+
+    .brasileirao h1,
+    .reflorestamento h1 {
+        font-size: 32px;
+    }
+
+    .brasileirao p,
+    .reflorestamento p {
+        font-size: 18px;
+    }
+
+    main #txtdepoimento {
+        font-size: 20px;
+    }
+
+    .p1 img,
+    .p2 img,
+    .p3 img,
+    .p4 img,
+    .p5 img {
+        width: 100px;
+        height: 120px;
+    }
+
+    .p1 h2,
+    .p2 h2,
+    .p3 h2,
+    .p4 h2,
+    .p5 h2 {
+        font-size: 24px;
+    }
+
+    footer .footercontainer img {
+        width: 150px;
+        height: 150px;
+    }
+
+    footer .footercontainer h2 {
+        font-size: 24px;
+    }
+
+    .footer-copy ul li a {
+        font-size: 1em;
+    }
+}
